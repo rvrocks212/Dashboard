@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#">
+            <div class="logo"><span>DASHBOARD</span></div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="#"><iconify-icon class="bx" icon="ri:team-fill"></iconify-icon>Team Management</a></li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <div class="right">
+                <a href="#" class="notif">
+                    <i class='bx bx-bell'></i>
+                </a>
+                <div class="profile">
+                    <img src="images/avatar.jpg">
+                    <div class="information">
+                        <span>Rajath Vinod</span>
+                        <h4>Sales Analyst</h4>
+                    </div>  
+                    <iconify-icon class="down" icon="bi:chevron-up"></iconify-icon>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <iconify-icon class="bx" icon="fa:group"></iconify-icon>
+                    <span class="info">
+                        <h3>
+                            500
+                        </h3>
+                        <p>Total Leads</p>
+                    </span>
+                </li>
+                <li><iconify-icon class="bx" icon="mingcute:phone-call-fill"></iconify-icon>
+                    <span class="info">
+                        <h3>
+                            300
+                        </h3>
+                        <p>Contacted Leads</p>
+                    </span>
+                </li>
+                <li><iconify-icon class="bx" icon="fluent:checkbox-person-16-filled"></iconify-icon>
+                    <span class="info">
+                        <h3>
+                            40%
+                        </h3>
+                        <p>Conversion Rate</p>
+                    </span>
+                </li>
+                <li><iconify-icon class="bx" icon="fluent:data-bar-vertical-star-16-filled"></iconify-icon>
+                    <span class="info">
+                        <h3>
+                            Facebook
+                        </h3>
+                        <p>Top Lead Source</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+            <!--line graph-->
+            <div class="bottom-data">
+                <div class="graphs">
+                    <div class="header">
+                        <h3>Top 5 Lead Generation Sources</h3>
+                    </div>
+                    <ul class="list">
+                        <li class="sources">
+                            <div class="inform">
+                                <h4>Facebook</h4>
+                                <p>180</p>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="sources">
+                            <div class="inform">
+                                <h4>Twitter</h4>
+                                <p>110</p>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="sources">
+                            <div class="inform">
+                                <h4>Google</h4>
+                                <p>90</p>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="sources">
+                            <div class="inform">
+                                <h4>Website</h4>
+                                <p>65</p>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                        <li class="sources">
+                            <div class="inform">
+                                <h4>Instagram</h4>
+                                <p>55</p>
+                            </div>
+                            <div class="line"></div>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">
+                        View More
+                        <iconify-icon class="arrow" icon="bi:chevron-up"></iconify-icon>
+                    </a>
+                </div>
+                <!--line graph ends-->
+
+                <!-- Pie Chart -->
+                <div class="reminders">
+                    <div class="head">
+                        <h3>Lead Status</h3>
+                        <span>Visualizes the distribution of leads across different statuses</span>
+                    </div>
+                    <div class="piechart"></div>
+                    <div class="data">
+                        <div class="dataInfo">
+                            <iconify-icon class="circle" icon="material-symbols:circle"></iconify-icon>
+                            <p>New</p>
+                        </div>
+                        <div class="dataInfo">
+                            <iconify-icon class="circle" icon="material-symbols:circle"></iconify-icon>
+                            <p>Contacted</p>
+                        </div>
+                        <div class="dataInfo">
+                            <iconify-icon class="circle" icon="material-symbols:circle"></iconify-icon>
+                            <p>Not Interested</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End of Pie Chart-->
+
+            </div>
+
+            <div class="heading">
+                <h2>Lead list</h2>
+                <a href="#" class="more">
+                    View More
+                    <iconify-icon class="arrow" icon="bi:chevron-up"></iconify-icon>
+                </a>
+            </div>
+
+            <!-- Start of Bottom table-->
+            <div class="bottom">
+                <div class="leads">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><input class="checkbox" type="checkbox"></th>
+                                <th>ID <iconify-icon class="updown" icon="ri:arrow-up-down-line"></iconify-icon></th>
+                                <th>Name <iconify-icon class="updown" icon="ri:arrow-up-down-line"></iconify-icon></th>
+                                <th>Mobile No. <iconify-icon class="updown" icon="ri:arrow-up-down-line"></iconify-icon></th>
+                                <th>Email <iconify-icon class="updown" icon="ri:arrow-up-down-line"></iconify-icon></th>
+                                <th>Source <iconify-icon class="updown" icon="ri:arrow-up-down-line"></iconify-icon></th>
+                                <th>Status <iconify-icon class="updown" icon="ri:arrow-up-down-line"></iconify-icon></th>
+                                <th>Date <iconify-icon class="updown" icon="ri:arrow-up-down-line"></iconify-icon></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input class="checkbox" type="checkbox">
+                                </td>
+                                <td>SL0234</td>
+                                <td>Peter Parker</td>
+                                <td>9100867456</td>
+                                <td>peter.p@gmail.com</td>
+                                <td>Facebook</td>
+                                <td><span class="status completed">Contacted</span></td>
+                                <td>14-08-2023</td>
+                                <td>
+                                    <iconify-icon icon="tabler:message-circle"></iconify-icon>
+                                </td>
+                                <td>
+                                    <iconify-icon icon="ph:eye"></iconify-icon>
+                                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input class="checkbox" type="checkbox">
+                                </td>
+                                <td>SL0234</td>
+                                <td>Peter Parker</td>
+                                <td>9100867456</td>
+                                <td>peter.p@gmail.com</td>
+                                <td>Facebook</td>
+                                <td><span class="status pending">Not Interested</span></td>
+                                <td>14-08-2023</td>
+                                <td>
+                                    <iconify-icon icon="tabler:message-circle"></iconify-icon>
+                                </td>
+                                <td>
+                                    <iconify-icon icon="ph:eye"></iconify-icon>
+                                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input class="checkbox" type="checkbox">
+                                </td>
+                                <td>SL0234</td>
+                                <td>Peter Parker</td>
+                                <td>9100867456</td>
+                                <td>peter.p@gmail.com</td>
+                                <td>Facebook</td>
+                                <td><span class="status process">New</span></td>
+                                <td>14-08-2023</td>
+                                <td></td>
+                                <td>
+                                    <iconify-icon icon="ph:eye"></iconify-icon>
+                                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End of Bottom table-->
+    </main>
+
+    </div>
+
+    <script src="index.js"></script>
+    <!--JS Script for iconify-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
